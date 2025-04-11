@@ -17,7 +17,7 @@ export class TodoComponent {
   ]
 
   newtodo : string = "";
-
+  a :number = 10;
   addTodo(){
     if (this.newtodo.trim()){
       this.todos.push({
