@@ -29,8 +29,6 @@
               }
             ],
             "styles": [
-              "node_modules/@primeng/themes/aura-light-blue/theme.css",
-              "node_modules/primeicons/primeicons.css",
               "src/styles.css"
             ],
             "scripts": [],
