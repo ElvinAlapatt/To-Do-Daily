@@ -1,0 +1,24 @@
+<div class="todo-container">
+    <div class="input-container">
+      <input 
+        type="text" 
+        [(ngModel)]="newtodo" 
+        placeholder="What needs to be done?"
+        (keyup.enter)="addTodo()"
+      >
+      <button (click)="addTodo()">Add</button>
+    </div>
+  
+    <div class="todo-list">
+      <app-todo-item 
+        *ngFor="let todo of todos"
+        [todo]="todo"
+        (delete)="delete(todo.id)"
+        (toggleComplete)="todoComplete(todo.id)"
+      ></app-todo-item>
+    </div>
+  
+    <div class="stats" *ngIf="todos.length">
+        {{ remainingCount }} tasks left
+      </div>
+  </div>
