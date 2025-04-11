@@ -5,12 +5,13 @@
 /tmp
 /out-tsc
 /bazel-out
+progress.txt
 
 # Node
 /node_modules
 npm-debug.log
 yarn-error.log
-/progress.txt
+
 
 # IDEs and editors
 .idea/
